@@ -107,6 +107,10 @@ matrix的服务器域名需更换：xxxx.com
 packages/shared/meta/sagas.ts fetchMetaConfiguration 165
 https://synapse.decentraland.org、https://synapse.decentraland.zone
 均需要修改为部署的二级域名：chat.xxxx.com
+
+packages/shared/meta/selectors.ts getSynapseUrl 92
+store.meta.config.synapseUrl ?? 'https://synapse.decentraland.zone'
+修改为部署的二级域名：chat.xxxx.com
 ```
 
 10.错误解决
