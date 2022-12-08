@@ -5,8 +5,11 @@
 2.```git clone https://github.com/decentraland/matrix-playbook.git```
 
 3.修改脚本配置
+```shell
 cp .env.example .env
 vim env
+```
+
   ```
   SSH_USER=ubuntu  // 域名解析绑定的服务器的登录用户名
   SUBDOMAIN=synapse  // 二级域名的域
@@ -55,11 +58,14 @@ Server Version: 20.10.14
 5.配置二级域名以及域名解析绑定一台公网服务器
 服务器需要密钥登录和密码登录
 密钥登录配置路径
+```
 ~/.ssh/
+
 .
 ├── authorized_keys
 ├── id_rsa
 └── id_rsa.pub
+```
 
 6.修改脚本
 ```
